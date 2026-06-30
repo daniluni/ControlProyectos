@@ -1,0 +1,37 @@
+@media(max-width:480px){
+  .header-brand span{display:none}
+  .tab-btn{font-size:.8rem;gap:2px}
+  .modal{width:100%;max-width:100%;min-height:100vh;border-radius:0}
+  .table td,.table th{padding:6px var(--space-xs);font-size:.8rem}
+}
+@media print{
+  .header,.tab-bar,.btn,.gastos-header,.proyectos-header,.modal-overlay{display:none!important}
+  .view{display:block!important;padding:0}
+  .card,.chart-container,.table-wrapper{box-shadow:none;border:1px solid #ddd}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:0s!important;animation-duration:0s!important}
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --color-bg:#0f172a;
+    --color-surface:#1e293b;
+    --color-header:#4f46e5;
+    --color-header-text:#ffffff;
+    --color-text:#f1f5f9;
+    --color-text-secondary:#94a3b8;
+    --color-border:#334155;
+    --color-shadow:rgba(0,0,0,0.3);
+  }
+  .estado-badge--activo{background:#064e3b;color:#6ee7b7}
+  .estado-badge--completado{background:#1e3a5f;color:#93c5fd}
+  .estado-badge--en\ pausa{background:#451a03;color:#fcd34d}
+  .estado-badge--cancelado{background:#450a0a;color:#fca5a5}
+  .estado-badge--aprobado{background:#064e3b;color:#6ee7b7}
+  .estado-badge--rechazado{background:#450a0a;color:#fca5a5}
+  .estado-badge--pendiente{background:#451a03;color:#fcd34d}
+  .table th{background:#1e293b}
+  .table tr:hover td{background:#334155}
+  .table tr.selected td{background:#1e1b4b}
+  .recurso-form-inline{background:#1e293b}
+}
